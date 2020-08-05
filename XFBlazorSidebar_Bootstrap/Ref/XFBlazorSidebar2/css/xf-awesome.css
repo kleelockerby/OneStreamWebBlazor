@@ -1,0 +1,58 @@
+@font-face 
+{
+  font-family: 'XFAwesome';
+  src:  url('../fonts/XFAwesome-webfont.eot?f4eamx');
+  src:  url('../fonts/XFAwesome-webfont.eot?f4eamx#iefix') format('embedded-opentype'),
+    url('../fonts/XFAwesome-webfont.ttf?f4eamx') format('truetype'),
+    url('../fonts/XFAwesome-webfont.woff?f4eamx') format('woff'),
+    url('../fonts/XFAwesome-webfont.svg?f4eamx') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.xf 
+{
+  display: inline-block;
+  font: normal normal normal 14px/1 XFAwesome;
+  font-size: inherit;
+  padding-right: 1.0em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xfFlyout 
+{
+  display: inline-block;
+  font: normal normal normal 14px/1 XFAwesome;
+  font-size: inherit;
+  padding-right: 0.2em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xfChild 
+{
+  display: inline-block;
+  font: normal normal normal 14px/1 XFAwesome;
+  font-size: inherit;
+  padding-right: 0.1em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xf-Minus:before { content: "\e900"; }
+.xf-Plus:before { content: "\e909"; }
+.xf-Actual:before { content: "\e901"; }
+.xf-CubeView:before { content: "\e902"; }
+.xf-CubeView-flyout:before { content: "\e902"; color:#e08e5e; }
+.xf-Dashboard:before { content: "\e903"; }
+.xf-Dashboard-flyout:before { content: "\e903"; color:#e08e5e; }
+.xf-Folder:before { content: "\e904"; color: #38a4e7; }
+.xf-Documents:before { content: "\e90a"; }
+.xf-PresProfile:before {  content: "\e906"; color: #38a4e7;}
+.xf-TimeDim:before { content: "\e907"; }
+.xf-Workflow:before { content: "\e908"; }

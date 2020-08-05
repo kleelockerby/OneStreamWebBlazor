@@ -1,0 +1,197 @@
+
+$blueMain: #101e2e;
+$blueMedium: #1c364b;
+$blueLight: #2b6386;
+$blueDark:#0e1922;
+$orangeMain: #e08e5e;
+
+$headerHeight: 3rem;
+
+$sidebarWidth: 19.375em;        /* 310px */
+$sidebarCollapsedWidth: 2.5em;
+$sidebarItemTopBtmPadding: 1.05em;
+$sidebarItemLeftRightPadding: 1em;
+$sidebarIconUpDownFontSize: 0.90em;
+$sidebarFlyoutItemPaddingTopBtm: 0.5em;
+$sidebarFlyoutItemPaddingLeftRight: 1.0em;
+$sidebarFlyoutItemIndent: 3.4em;
+$sidebarFlyoutItemFontSize: 1.0em;
+$sidebarFlyoutIconFontSize: 0.55em;
+
+$navbarPaddingTopBtm: 0;
+$navbarPaddingLeftRight: 1rem;
+$navbarIconsRightMargin: 2.5rem;
+$navbarUserProfileFontSize: 0.95rem;
+$navbarUserProfilePaddingRight: 1.2rem;
+$navbarUserProfileColor: $blueLight;
+$navbarUserProfileFontWeight: 500;
+
+$btnInfoBackgroundColor: $blueLight;
+$btnInfoBorderColor: $blueDark;
+
+*, :before, *:after 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body { position: relative; }
+
+body 
+{
+    font-size: 100%;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #fefefe;
+}
+
+a 
+{
+    text-decoration: none;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+a:hover 
+{
+    text-decoration: none;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.app 
+{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.xf-sidebar
+{
+    position: relative;
+    min-width: $sidebarWidth; 
+    max-width: $sidebarWidth;
+    height: 100vh;
+    overflow: hidden;
+    visibility: visible;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    
+    header
+    {
+        background-color: $blueMedium;
+        width: 100%;
+        display: block;
+        padding: 0.75em 1em;
+        height: $headerHeight;
+
+        h5
+        {
+            color: #FFF;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+.xf-sidebar-nav 
+ {
+    position: fixed;
+    background-color: $blueMain;
+    color: #FFF;
+    height: 100%;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-bottom: 6em;
+    overflow: hidden;
+    width: 100%;
+
+    ul
+    {
+        list-style: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        li
+        {
+            margin-left: 0;
+            padding-left: 0;
+            display: inline-block;
+            width: 100%;
+
+            a
+            {
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 0.75em;
+                padding: $sidebarItemTopBtmPadding $sidebarItemLeftRightPadding;
+                position: relative;
+                display: block;
+                width: 100%;
+
+                &:hover
+                {
+                    background-color: rgba(0, 0, 0, 0.9);
+                    text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.7);
+                    -webkit-transition: all 0.6s ease;
+                    -moz-transition: all 0.6s ease;
+                    transition: all 0.6s ease;
+                }
+
+                &:not([href]):not([tabindex])
+                {
+                    color: rgba(255, 255, 255, 0.9);
+                    font-size: 0.75em;
+                    padding: $sidebarItemTopBtmPadding $sidebarItemLeftRightPadding;
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .nav-flyout 
+    {
+        position: absolute;
+        background-color: $blueLight;
+        z-index: 9;
+        left: 2.0em;
+        top: 0;
+        height: 100vh;
+        max-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-transform: translateX(150%);
+        -moz-transform: translateX(150%);
+        -ms-transform: translateX(150%);
+        -o-transform: translateX(150%);
+        transform: translateX(150%);
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+}
+
+.xf-sidebar-nav>ul>li>a:after 
+{
+    content: '\f105';
+    font-family: fontawesome;
+    font-size: $sidebarIconUpDownFontSize;
+    width: 10px;
+    color: #fff;
+    position: absolute;
+    right: 0.75em;
+    top: 36%;
+}

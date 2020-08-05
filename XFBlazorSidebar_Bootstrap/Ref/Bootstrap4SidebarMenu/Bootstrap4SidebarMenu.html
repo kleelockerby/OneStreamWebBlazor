@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Codeply">
+  <title>Codeply simple HTML/CSS/JS preview</title>
+  <!--<base target="_self">-->
+  <base href="." target="_self"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  
+  #sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
+}
+
+/* highlight active menu */
+#sidebar .list-group-item:not(.collapsed) {
+    background-color: #222;
+}
+
+/* closed state */
+#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+/* open state */
+#sidebar .list-group .list-group-item[aria-expanded="true"] {
+  background-color: #222;
+}
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+}
+
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item  {
+  padding-left: 20px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item {
+  padding-left: 30px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+  padding-left: 40px;
+}
+
+@media (max-width:48em) {
+    /* overlay sub levels on small screens */
+    #sidebar .list-group .collapse.in, #sidebar .list-group .collapsing {
+        position: absolute;
+        z-index: 1;
+        width: 190px;
+    }
+    #sidebar .list-group > .list-group-item {
+        text-align: center;
+        padding: .75rem .5rem;
+    }
+    /* hide caret icons of top level when collapsed */
+    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
+    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
+        display:none;
+    }
+}
+
+/* change transition animation to width when entire sidebar is toggled */
+#sidebar.collapse {
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: .2s;
+       -o-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#sidebar.collapsing {
+  opacity: 0.8;
+  width: 0;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition-property: width;
+       -o-transition-property: width;
+          transition-property: width;
+
+}
+
+</style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-xs-1 p-l-0 p-r-0 in collapse show" id="sidebar" aria-expanded="true">
+            <div class="list-group panel">
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#menu1" class="list-group-item" data-toggle="collapse" data-parent="#sidebar" aria-expanded="true"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Item 1</span> </a>
+                <div class="collapse show" id="menu1" aria-expanded="true">
+                    <a href="https://www.codeply.com/v/76ljNOsKQ6#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="true">Subitem 1 </a>
+                    <div class="collapse show" id="menu1sub1" aria-expanded="true">
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1">Subitem 1 a</a>
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1">Subitem 2 b</a>
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 3 c </a>
+                        <div class="collapse" id="menu1sub1sub1">
+                            <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.1</a>
+                            <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.2</a>
+                        </div>
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1">Subitem 4 d</a>
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 5 e </a>
+                        <div class="collapse" id="menu1sub1sub2">
+                            <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.1</a>
+                            <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.2</a>
+                        </div>
+                    </div>
+                    <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                    <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                </div>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Item 2</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-book"></i> <span class="hidden-sm-down">Item 3 </span></a>
+                <div class="collapse" id="menu3" aria-expanded="false">
+                    <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu3">3.1</a>
+                    <a href="https://www.codeply.com/v/76ljNOsKQ6#menu3sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">3.2 </a>
+                    <div class="collapse" id="menu3sub2">
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu3sub2">3.2 a</a>
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu3sub2">3.2 b</a>
+                        <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu3sub2">3.2 c</a>
+                    </div>
+                    <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item" data-parent="#menu3">3.3</a>
+                </div>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="hidden-sm-down">Item 4</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-list"></i> <span class="hidden-sm-down">Item 5</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-clock-o"></i> <span class="hidden-sm-down">Link</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-th"></i> <span class="hidden-sm-down">Link</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-gear"></i> <span class="hidden-sm-down">Link</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-calendar"></i> <span class="hidden-sm-down">Link</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-envelope"></i> <span class="hidden-sm-down">Link</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-bar-chart-o"></i> <span class="hidden-sm-down">Link</span></a>
+                <a href="https://www.codeply.com/v/76ljNOsKQ6#" class="list-group-item collapsed" data-parent="#sidebar"><i class="fa fa-star"></i> <span class="hidden-sm-down">Link</span></a>
+            </div>
+        </div>
+        <main class="col-md-9 col-xs-11 p-l-2 p-t-2">
+            <a href="https://www.codeply.com/v/76ljNOsKQ6#sidebar" data-toggle="collapse" class="" aria-expanded="true"><i class="fa fa-navicon fa-lg"></i></a>
+            <hr>
+            <div class="page-header">
+                <h1>Bootstrap 4 Sidebar Menu</h1>
+            </div>
+            <p class="lead">A responsive, multi-level vertical accordion.</p>
+        </main>
+    </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+  <script src="https://www.codeply.com/v/76ljNOsKQ6"></script>
+
+  <script>
+  
+  </script>
+  <script>
+    // prevent navigation
+    document.addEventListener("DOMContentLoaded", function() {
+      var links = document.getElementsByTagName("A");
+      for(var i=0; i < links.length; i++) {
+        links[i].addEventListener("click", function(e) {
+          var href = this.getAttribute("href")
+
+          if (!href) {
+            return
+          }
+
+          if (href === '#') {
+            // hash only ('#')
+            console.debug('Internal nav allowed by Codeply');
+            e.preventDefault()
+          }
+          else if (this.hash) {
+            // hash with tag ('#foo')
+            var element = null
+            try {
+              element = document.querySelector(this.hash)
+            }
+            catch(e) {
+              console.debug('Codeply internal nav querySelector failed')
+            }
+            if (element) {
+              // scroll to anchor
+              e.preventDefault();
+              const top = element.getBoundingClientRect().top + window.pageYOffset
+              //window.scrollTo({top, behavior: 'smooth'})
+              window.scrollTo(0,top)
+              console.debug('Internal anchor controlled by Codeply to element:' + this.hash)
+            }
+            else {
+              // allow javascript routing
+              console.debug('Internal nav route allowed by Codeply');
+            }
+          }
+          else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
+            // special multi-page routing
+            console.debug('Special internal page route: ' + href)
+
+            var l = href.replace('/p/','/v/')
+
+            // reroute
+            e.preventDefault()
+            var newLoc = l + '?from=internal'
+            console.debug('Internal view will reroute to ' + newLoc) 
+            location.href = newLoc
+          }
+          else if (href.indexOf("./")===0) {
+            // special multi-page routing
+            console.debug('Special internal ./ route: ' + href)
+
+            var u = parent.document.URL.split("/")
+            var pn = href.split("/")[1]
+            var plyId = u[u.length-1]
+
+            if (plyId.indexOf('?from')>-1) {
+              // already rerouted this
+              console.debug('already rerouted')
+              plyId = u[u.length-2]
+            }
+
+            var l = plyId + '/' + pn
+            
+            console.debug(u)
+            console.debug(pn)
+            console.debug('l',l)
+
+            // reroute
+            e.preventDefault()
+            var newLoc = '/v/' + l + '?from=internal'
+            console.debug('Internal page will reroute to ' + newLoc) 
+            location.href = newLoc
+          }
+          else {
+            // no external links
+            e.preventDefault();
+            console.debug('External nav prevented by Codeply');
+          }
+          //return false;
+        })
+      }
+    }, null);
+  </script>
+
+
+</body></html>

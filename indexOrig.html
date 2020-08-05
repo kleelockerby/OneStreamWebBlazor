@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>XFWeb</title>
+    <base href=".">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/xf-awesome.css">
+<!--     <link rel="stylesheet" href="css/fontFaces.css"> -->
+    <link rel="stylesheet" href="css/siteOrig.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="app">
+	<div class="d-flex align-items-stretch w-100 flex-nowrap m-0 p-0">
+		<aside class="xf-sidebar">
+			<header>
+				<h5>XF OnePlace</h5>
+			</header>
+			<nav class="xf-sidebar-nav">
+				<ul>
+					<li class="nav nav-item">
+						<a href="#"><i class="xf xf-Workflow"></i><span>Workflow</span></a>
+						<ul class="nav-flyout">
+							<li><a href="#"><i class="xf xf-Workflow-flyout"></i><span>Clubs</span></a></li>
+							<li><a href="#"><i class="xf xf-Actual-flyout"></i><span>Actual</span></a></li>
+							<li><a href="#"><i class="xf xf-TimeDim-flyout"></i><span>2011</span></a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a><i class="xf xf-CubeView"></i><span>Cube Views</span></a>
+						<ul class="nav-flyout">
+							<li><a class="profile"><i class="xfFlyout xf-PresProfile"></i><span>Capital Planning (Drivers)</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>Capital
+												Planning Entity Drivers</span></a></li>
+								</ul>
+							</li>
+							<li><a class="profile"><i class="xfFlyout xf-PresProfile"></i><span>Capital Planning (Review)</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>Capital
+												Planning PPE Review</span></a></li>
+								</ul>
+							</li>
+							<li><a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Cash Planning
+										(Drivers)</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>Cash Planning
+												Entity Drivers</span></a></li>
+								</ul>
+							</li>
+							<li><a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Reports
+										(CashFlow)</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>AR Account
+												Roll (Consolidated)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>Cash Account
+												Statement Example</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>PPE Account
+												Roll</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-CubeView-flyout"></i><span>PPE Account
+												Roll (Consolidating)</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#"><i class="xf xf-Dashboard"></i><span>Dashboards</span></a>
+						<ul class="nav-flyout">
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id) Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail (Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis
+												Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id)
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail
+												(Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis
+												Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id)
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail
+												(Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis
+												Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id)
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail
+												(Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis
+												Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id)
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail
+												(Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis
+												Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id)
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail
+												(Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Operating Exp
+												Variance</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Quick
+												Analysis
+												Wizard</span></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Financial Review
+										Houston</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Sales
+												Dashboard</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Variance
+												Analysis</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Certification Houston Plant
+										Controllers</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Financial
+												Report
+												Book</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Import Detail
+												(Source Id)
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Detail
+												(Overrides)</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Intercompany
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Journal
+												Reports</span></a>
+									</li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Key Data
+												Dashboard</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Application</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Application
+												Analysis
+												Reports</span></a></li>
+									<li><a class="flyout-indent" href="#"><i class="xfChild xf-Dashboard-flyout"></i><span>Entity Data
+												Stats</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="profile" href="#"><i class="xfFlyout xf-PresProfile"></i><span>Explore Commentary</span></a>
+								<ul class="submenu">
+									<li><a class="flyout-indent" href="#"><i
+												class="xfChild xf-Dashboard-flyout"></i><span>Commentary</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#"><i class="xf xf-Documents"></i><span>Documents</span></a>
+						<ul class="nav-flyout">
+							<li><a href="#"><i class="xf xf-Folder-flyout"></i><span>Public</span></a></li>
+							<li><a href="#"><i class="xf xf-Folder-flyout"></i><span>Users</span></a></li>
+							<li><a href="#"><i class="xf xf-Folder-flyout"></i><span>Admin</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="main-content-container">
+			<header class="main-header">
+				<div style="display: inline-block">
+					<a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+				</div>
+				<img src="images/OneStreamLogoTag.png" style="display: inline-block" />
+			</header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="main-content" style="margin: 20px;">
+						<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3">
+							<h2>Welcome to OneStream Blazor!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	
+</div>
+
+<script>
+
+	$(document).ready(function ()
+	{
+		$('.nav-flyout li a.profile').click(function (event)
+		{
+			$(this).toggleClass("special");
+			var elem = $(this).next().toggleClass("open");
+
+		});
+
+	});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Codeply">
+  <title>Codeply simple HTML/CSS/JS preview</title>
+  <!--<base target="_self">-->
+  <base href="." target="_self"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ResponsiveSidebarCodeply.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <!-- sidebar -->
+        <div class="column col-sm-3 col-xs-1 sidebar-offcanvas" id="sidebar">
+            <ul class="nav" id="menu">
+                <li><a href="https://www.codeply.com/v/uunNOeQAqo#"><i class="fa fa-list-alt"></i> <span class="collapse in hidden-xs">Link 1</span></a></li>
+                <li><a href="https://www.codeply.com/v/uunNOeQAqo#"><i class="fa fa-list"></i> <span class="collapse in hidden-xs">Stories</span></a></li>
+                <li><a href="https://www.codeply.com/v/uunNOeQAqo#"><i class="fa fa-paperclip"></i> <span class="collapse in hidden-xs">Saved</span></a></li>
+                <li><a href="https://www.codeply.com/v/uunNOeQAqo#"><i class="fa fa-refresh"></i> <span class="collapse in hidden-xs">Refresh</span></a></li>
+                <li>
+                    <a href="https://www.codeply.com/v/uunNOeQAqo#" data-target="#item1" data-toggle="collapse"><i class="fa fa-list"></i> <span class="collapse in hidden-xs">Menu <span class="caret"></span></span></a>
+                    <ul class="nav nav-stacked collapse left-submenu" id="item1">
+                        <li><a href="https://www.codeply.com/v/google.com">View One</a></li>
+                        <li><a href="https://www.codeply.com/v/gmail.com">View Two</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://www.codeply.com/v/uunNOeQAqo#" data-target="#item2" data-toggle="collapse"><i class="fa fa-list"></i> <span class="collapse in hidden-xs">Menu <span class="caret"></span></span></a>
+                    <ul class="nav nav-stacked collapse" id="item2">
+                        <li><a href="https://www.codeply.com/v/uunNOeQAqo#">View One</a></li>
+                        <li><a href="https://www.codeply.com/v/uunNOeQAqo#">View Two</a></li>
+                        <li><a href="https://www.codeply.com/v/uunNOeQAqo#">View Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.codeply.com/v/uunNOeQAqo#"><i class="glyphicon glyphicon-list-alt"></i> <span class="collapse in hidden-xs">Link</span></a></li>
+            </ul>
+        </div>
+        <!-- /sidebar -->
+
+        <!-- main right col -->
+        <div class="column col-sm-9 col-xs-11" id="main">
+            <p><a href="https://www.codeply.com/v/uunNOeQAqo#" data-toggle="offcanvas"><i class="fa fa-navicon fa-2x"></i></a></p>
+            <p>
+                Main content...
+            </p>
+        </div>
+        <!-- /main -->
+    </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://www.codeply.com/v/uunNOeQAqo"></script>
+
+  <script>
+  /* off-canvas sidebar toggle */
+$('[data-toggle=offcanvas]').click(function(e) {
+    e.preventDefault()
+    $('.row-offcanvas').toggleClass('active');
+    $('.collapse').toggleClass('in').toggleClass('hidden-xs').toggleClass('visible-xs');
+});
+  </script>
+  <script>
+    // prevent navigation
+    document.addEventListener("DOMContentLoaded", function() {
+      var links = document.getElementsByTagName("A");
+      for(var i=0; i < links.length; i++) {
+        links[i].addEventListener("click", function(e) {
+          var href = this.getAttribute("href")
+
+          if (!href) {
+            return
+          }
+
+          if (href === '#') {
+            // hash only ('#')
+            console.debug('Internal nav allowed by Codeply');
+            e.preventDefault()
+          }
+          else if (this.hash) {
+            // hash with tag ('#foo')
+            var element = null
+            try {
+              element = document.querySelector(this.hash)
+            }
+            catch(e) {
+              console.debug('Codeply internal nav querySelector failed')
+            }
+            if (element) {
+              // scroll to anchor
+              e.preventDefault();
+              const top = element.getBoundingClientRect().top + window.pageYOffset
+              //window.scrollTo({top, behavior: 'smooth'})
+              window.scrollTo(0,top)
+              console.debug('Internal anchor controlled by Codeply to element:' + this.hash)
+            }
+            else {
+              // allow javascript routing
+              console.debug('Internal nav route allowed by Codeply');
+            }
+          }
+          else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
+            // special multi-page routing
+            console.debug('Special internal page route: ' + href)
+
+            var l = href.replace('/p/','/v/')
+
+            // reroute
+            e.preventDefault()
+            var newLoc = l + '?from=internal'
+            console.debug('Internal view will reroute to ' + newLoc) 
+            location.href = newLoc
+          }
+          else if (href.indexOf("./")===0) {
+            // special multi-page routing
+            console.debug('Special internal ./ route: ' + href)
+
+            var u = parent.document.URL.split("/")
+            var pn = href.split("/")[1]
+            var plyId = u[u.length-1]
+
+            if (plyId.indexOf('?from')>-1) {
+              // already rerouted this
+              console.debug('already rerouted')
+              plyId = u[u.length-2]
+            }
+
+            var l = plyId + '/' + pn
+            
+            console.debug(u)
+            console.debug(pn)
+            console.debug('l',l)
+
+            // reroute
+            e.preventDefault()
+            var newLoc = '/v/' + l + '?from=internal'
+            console.debug('Internal page will reroute to ' + newLoc) 
+            location.href = newLoc
+          }
+          else {
+            // no external links
+            e.preventDefault();
+            console.debug('External nav prevented by Codeply');
+          }
+          //return false;
+        })
+      }
+    }, null);
+  </script>
+
+
+</body></html>
