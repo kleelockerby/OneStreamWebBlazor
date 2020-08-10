@@ -1,33 +1,4 @@
-
-$blueMain: #101e2e;
-$blueMedium: #1c364b;
-$blueLight: #2b6386;
-$blueDark:#0e1922;
-$orangeMain: #e08e5e;
-
-$headerHeight: 3rem;
-
-$sidebarWidth: 19.375em;        /* 310px */
-$sidebarCollapsedWidth: 2.5em;
-$sidebarItemTopBtmPadding: 1.05em;
-$sidebarItemLeftRightPadding: 1em;
-$sidebarIconUpDownFontSize: 0.90em;
-$sidebarFlyoutItemPaddingTopBtm: 0.5em;
-$sidebarFlyoutItemPaddingLeftRight: 1.0em;
-$sidebarFlyoutItemIndent: 3.4em;
-$sidebarFlyoutItemFontSize: 1.0em;
-$sidebarFlyoutIconFontSize: 0.55em;
-
-$navbarPaddingTopBtm: 0;
-$navbarPaddingLeftRight: 1rem;
-$navbarIconsRightMargin: 2.5rem;
-$navbarUserProfileFontSize: 0.95rem;
-$navbarUserProfilePaddingRight: 1.2rem;
-$navbarUserProfileColor: $blueLight;
-$navbarUserProfileFontWeight: 500;
-
-$btnInfoBackgroundColor: $blueLight;
-$btnInfoBorderColor: $blueDark;
+@import "variables";
 
 *, :before, *:after 
 {
@@ -52,12 +23,10 @@ body
     background-color: #fefefe;
 }
 
-a 
-{
-    text-decoration: none;
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    transition: all 0.6s ease;
+a {
+  color: $blueLight;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 a:hover 
@@ -307,7 +276,6 @@ ul.nav-flyout li a.flyout-indent
     width: 100%;
     padding: 0;
     min-height: 100vh;
-    transition: all 0.3s;
 }
 
 @media (max-width: 768px) 
@@ -402,15 +370,10 @@ ul.nav-flyout li a.flyout-indent
 .btn-info {
   color: #fff;
   background-color: $btnInfoBackgroundColor;
-  $btnInfoBorderColor: $blueLight;
+  border-color: $btnInfoBorderColor;
 }
 
-
-.fa-user
-{
-  margin-right: 10px;
-}
-
+.fa-user{margin-right:10px;}
 .fa-bars:before { content: "\f0c9"; color: $orangeMain; }
 .xf-Actual-flyout:before { content: "\e901"; color: $blueDark; }
 .xf-CubeView-flyout:before { content: "\e902"; color:$orangeMain; }

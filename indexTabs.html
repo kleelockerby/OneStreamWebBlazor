@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>XFWeb</title>
 	<base href=".">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/xf-awesome.css">
 <!--     <link rel="stylesheet" href="css/fontFaces.css"> -->
     <link rel="stylesheet" href="css/site.css" >
+    <link rel="stylesheet" href="css/tabs.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -551,9 +552,9 @@
 					<div class="container-fluid">
 						<button type="button" id="sidebarCollapse" class="btn btn-info"><i class="fa fa-align-left"></i></button>
 
-						<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<i class="fa fa-align-justify"></i>
-						</button>
+						</button> -->
 
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -585,17 +586,49 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="main-content">
-						<div class="m-2" style="border: 1px solid #ccc;">
-							<h2>Welcome to OneStream Blazor!</h2>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim arcu at turpis vulputate, ac porttitor felis
-								interdum. Aenean vitae tellus porta, auctor lacus nec, tristique arcu. Curabitur scelerisque convallis risus, nec
-								pulvinar est consequat ac. Morbi scelerisque rhoncus sem nec convallis. In ut neque sed leo maximus molestie a non
-								lorem. Maecenas quis dapibus eros. Proin consequat accumsan pulvinar. Cras hendrerit massa non aliquam semper. Nulla
-								gravida, nulla vel imperdiet efficitur, tortor nibh pretium nisi, in elementum quam dui eget ante. Fusce hendrerit,
-								velit sit amet malesuada scelerisque, leo est euismod sem, sed gravida ipsum velit quis mi. Integer at elementum leo,
-								nec sodales nisi. Aliquam semper magna mauris, a vehicula augue pulvinar vitae. Morbi ac elit malesuada, facilisis arcu
-								ac, interdum neque. Mauris sodales blandit nibh. Donec a rutrum leo.
+						<div class="m-2">
+                            <h2>Dashboards</h2>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link dashboard" href="#"><i class="xf xf-Dashboard mr-2"></i><span>Home</span></a></li>
+                                <li class="nav-item"><a class="nav-link dashboard active" href="#"><i class="xfChild xf-Dashboard-flyout mr-2"></i><span>Menu 1</span></a></li>
+                                <li class="nav-item"><a class="nav-link dashboard" href="#"><i class="xfChild xf-CubeView-flyout mr-2"></i><span>Menu 2</span></a></li>
+                                <li class="nav-item"><a class="nav-link dashboard" href="#"><i class="xfChild xf-Dashboard-flyout mr-2"></i><span>Menu 3</span></a></li>
+                            </ul>
+							<div class="nav-item-content">
+                                <div class="nav-item-panel">
+                                    <div>Tab Panel 1</div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor aliquam magna, ac bibendum nibh euismod ut. Cras
+                                        condimentum massa a posuere maximus. Donec finibus, magna ut finibus dignissim, nulla turpis fringilla est, sed finibus
+                                        arcu elit non quam.
+                                    </div>
+                                </div>
+								<div class="nav-item-panel active">
+                                    <div>Tab Panel 2</div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor aliquam magna, ac bibendum nibh euismod ut. Cras
+                                        condimentum massa a posuere maximus. Donec finibus, magna ut finibus dignissim, nulla turpis fringilla est, sed finibus
+                                        arcu elit non quam.
+                                    </div>
+                                </div>
+                                <div class="nav-item-panel">
+                                    <div>Tab Panel 3</div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor aliquam magna, ac bibendum nibh euismod ut. Cras
+                                        condimentum massa a posuere maximus. Donec finibus, magna ut finibus dignissim, nulla turpis fringilla est, sed finibus
+                                        arcu elit non quam.
+                                    </div>
+                                </div>
+                                <div class="nav-item-panel">
+                                    <div>Tab Panel 3</div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor aliquam magna, ac bibendum nibh euismod ut.
+                                        Cras
+                                        condimentum massa a posuere maximus. Donec finibus, magna ut finibus dignissim, nulla turpis fringilla est, sed
+                                        finibus
+                                        arcu elit non quam.
+                                    </div>
+                                </div>
 							</div>
 						</div>
 					</div>

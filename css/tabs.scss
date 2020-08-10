@@ -1,0 +1,56 @@
+@import "variables";
+
+.nav-tabs {
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-tabs .nav-link.active {
+   color: #fff;
+    background-color: $blueMedium;
+    border-color: $blueLight $blueLight #fff;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-tabs .nav-link {
+    border-color: $tabBorderColor $tabBorderColor #fff;
+    border-top-left-radius: $tabItemBorderRadius;
+    border-top-right-radius: $tabItemBorderRadius;
+}
+
+.nav-tabs .nav-item
+{
+    margin-left: $tabItemMarginLeft;
+}
+
+a.dashboard {
+  color: $orangeDark;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.dashboard:after {
+  content: '\f00d';
+  font-family: fontawesome;
+  margin-left: .625rem;
+}
+
+.nav-item-content
+{
+    padding: .625rem; 
+    border: 1px solid $tabBorderColor; 
+    border-top: none; 
+    min-height: 80vh;
+}
+.nav-item-content>.nav-item-panel
+{
+    display: none;
+}
+
+.nav-item-content>.active
+{
+    display: block;
+}
