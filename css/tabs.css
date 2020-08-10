@@ -15,7 +15,7 @@
 }
 
 .nav-tabs .nav-link {
-  border-color: #101e2e #101e2e #fff;
+  border-color: #ccc #ccc #fff;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
@@ -38,7 +38,7 @@ a.dashboard:after {
 
 .nav-item-content {
   padding: .625rem;
-  border: 1px solid #101e2e;
+  border: 1px solid #ccc;
   border-top: none;
   min-height: 80vh;
 }
