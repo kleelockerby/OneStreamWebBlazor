@@ -4,26 +4,23 @@
     border-bottom: 1px solid #ccc;
 }
 
-.nav-tabs .nav-link.active {
-    color: #fff;
-    background-color: $blueMedium;
-    border-color: $blueLight $blueLight #fff;
-}
-
-.nav-link {
-    display: block;
-    padding: 0.25rem 0.5rem;
+.nav-tabs .nav-item
+{
+    margin-left: $tabItemMarginLeft;
 }
 
 .nav-tabs .nav-link {
+    display: block;
+    padding: 0.25rem 0.5rem;
     border-color: $tabBorderColor $tabBorderColor #fff;
     border-top-left-radius: $tabItemBorderRadius;
     border-top-right-radius: $tabItemBorderRadius;
 }
 
-.nav-tabs .nav-item
-{
-    margin-left: $tabItemMarginLeft;
+.nav-tabs .nav-link.active {
+   color: #fff;
+    background-color: $blueMedium;
+    border-color: $blueLight $blueLight #fff;
 }
 
 a.dashboard {

@@ -1,0 +1,29 @@
+﻿window.JsFunctions = {
+    InitWebDashboard: function () {
+        DevExpress.Dashboard.ResourceManager.embedBundledResources();
+        this.dashboardControl = new DevExpress.Dashboard.DashboardControl(document.getElementById("web-dashboard"), {
+            endpoint: "/api/dashboards",
+            
+            //workingMode: "ViewerOnly"
+        });
+
+        //this.dashboardControl.OpenDashboard("asdf");
+        
+        this.dashboardControl.render();
+    },
+    DisposeWebDashboard: function () {
+        this.dashboardControl.dispose();
+    },
+    //LoadDashboard: function () {
+    //    //DevExpress.Dashboard.ResourceManager.embedBundledResources();
+    //    //this.dashboardControl = new DevExpress.Dashboard.DashboardControl(document.getElementById("web-dashboard"), {
+    //    //    endpoint: "/api/dashboards"
+    //    //    //workingMode: "ViewerOnly"
+    //    //});
+
+    //    //var xml = "";
+    //    //var stream = BIViewerDataHelper.StringToStream(xml)
+
+    //    //this.dashboardControl.LoadDashboard();
+    //}
+};

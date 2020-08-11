@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><script src="HRPassport_files/ga.js" async type="text/javascript"></script><script language="JavaScript1.2">
+<!--
+// Precise/Indepth For Web code v9.0
+if (typeof(TextDate) == 'undefined' && location.host != "") {var clientSideManageCookies=1;var AgentLocation="";TextDate = new Date();MoTextTime = TextDate.getTime() + 1;var i4web_script='<SCRIPT LANGUAGE="JavaScript1.2" src="'+AgentLocation+"veritas_i4t_agents/";if(clientSideManageCookies){var maxI4WebCookieSize=2048; var r4web=new Date().getTime()+"_"+Math.floor(Math.random()*1000);document.write(i4web_script + 'i4web_pss_uuid.js?t='+r4web+ '"><\/script>');} document.write(i4web_script+'pssift_s1.js">'+ '<\/script>');}
+//-->
+</script><script language="JavaScript1.2" src="HRPassport_files/i4web_pss_uuid.js"></script><script language="JavaScript1.2" src="HRPassport_files/pssift_s1.js"></script>
+
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="icon" href="https://www.hrpassport.com/Baseline/Saf/Images/Default/Signon/favicon.ico" type="vnd.microsoft.icon">
+
+<script type="text/javascript" language="Javascript">
+	if (typeof console === "undefined" || typeof console.log === "undefined") {
+	  console = {};
+	  console.log = function(msg) { 
+	  	 //Do nothing in browsers that don't support a log.
+	  };
+	}
+</script>
+		
+<script type="text/javascript">
+
+/* JavaScript Bulletin Board for common static globals  */
+
+var jjEngine = '/Link2HR.eng?'
+var jjEngineDate = '09/16/2013'
+var jjEngineDateTime = '09/16/2013 20:18:56'
+var jjPathPortal = '/Saf/Entry/Portal.htm'
+var jjPathRootImages = '/Saf/Images/Default'
+
+var jjHelpMainPath = '/Help/Helpframe.htm'
+var jjHelpMainFrame = 'Help'
+var jjHelpWindowFeatures = 'toolbar,status,scrollbars,resizable,width=595,height=525'
+
+		// User session preferences
+var jjCOUNTRY_CD = 'US'
+var jjCURRENCY_CD = 'USD'
+var jjDATE_FORMAT = '%m/%d/%Y'
+var jjNUMERIC_FORMAT_ID = '01'
+
+var jjS_LANGUAGE = 'en'
+
+var jjsymbol = '$'
+var jjsymbol_placement = ''
+var jjdecimal_digits = '2'
+var jjdecimal_separator = '.'
+var jjnegative_format = '-'
+var jjsignificant_digits = '1'
+var jjthousand_separator = ','
+
+var jjSignonMemory = false
+
+</script>
+
+<style type="text/css">
+
+@import url("HRPassport_files/foundation.css");
+
+/* Imported Style Sheet(s) for primary UI attributes  */
+
+/*  @import url("https://www.hrpassport.com/Baseline/Styles/Foundation.css");   */
+
+/*
+## Copyright:	2001 MBH Solutions, Inc., All rights reserved.
+## Filename:	Signon.css
+
+Title:	Signon style sheet
+Summary:  Provides supplemental styles for Signon panels
+		format presentation.
+
+Author:	Bradley Rhine
+Date:	3/22/2002
+Revisions
+
+	Date:	10/21/04
+	Author:	J. Alvies
+	Change: Change Colors for signon page.
+
+*/
+
+dl {margin: 5ex 0;}
+dt {
+  font-weight: bold;
+  margin-bottom: 2ex;
+}
+dd {margin: 2ex 0 5ex;}
+ol {
+  margin: 2ex 0;
+  padding-left: 20px;
+}
+ul {margin: 2ex 0;}
+.message.maintenance {
+	font-weight: bold;
+	margin:50px auto;
+}
+.message.alert {
+	text-align: center;
+	font-weight: bold;
+}
+
+#container {
+	width: 698px;
+	margin:40px auto;
+	/*background: white url(/Baseline/Saf/Images/Default/Signon/bg_header_login.png) repeat-x;*/
+	border: 1px solid #959595;
+	-moz-box-shadow: 0 0 50px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,.25);
+	box-shadow: 0 0 50px rgba(0,0,0,.25);
+}
+#trinetlogo {
+	margin-left: 20px;
+}
+
+/*html { 
+  background: url(/Baseline/Saf/Images/login.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+body {
+  /*background: #FFFFFF url(/Baseline/Saf/Images/Login.jpg) center center fixed no-repeat; */
+  background: #FFFFFF url(/Baseline/Saf/Images/Login.jpg) no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  top 0;
+  left:0;
+}
+
+h1 {
+  color: #739600;
+  font: normal 35px/1 Vollkorn Regular, "Times New Roman", Times, Serif;
+  margin: 0 0 10px;
+  text-align: left;
+  vertical-align: middle;
+	background: url(/Baseline/Saf/Images/Default/Signon/separator_hor.png) bottom left no-repeat;
+	padding-bottom: 15px;
+	margin-left: 20px;
+}
+h2 {
+  color: #739600;
+  font: normal 25px/1 Georgia, "Times New Roman", Times, Serif;
+  margin: 0 0 15px;
+  text-align: left;
+  vertical-align: middle;
+	padding-bottom: 5px;
+	margin-left: 20px;
+}
+h2 span {
+  color: #939393;
+  font: 19px 'Calibri',sans-serif;
+  border-left: 1px solid #D7D7D7;
+  padding-left: 8px;
+}
+h2 span span {display: none;}
+
+#login, #app_down {
+	margin: 0 24px;
+}
+
+#app_down {
+  font-size: 16px;
+  font-weight: 600;
+}
+#login form div {
+	margin-bottom: 5px;
+	clear:both;
+	height: 1%;
+}
+#login form div:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear:both;
+}
+#login form div div {
+  clear: none;
+  float: left;
+  margin: 0;
+  height: auto;
+}
+#login form div div:after {content: none;}
+#login form div div div {
+  clear: both;
+  float: none;
+}
+#login label.for {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #949494;
+  display: block;
+  text-align: right;
+  width: 286px;
+  font-weight: bold;
+  float: left;
+  padding: 3px 10px 0 0;
+}
+
+#logtext {
+  position: absolute;
+  font-size: 12px;
+  color: #949494;
+  display: block;
+  font-weight: bold;
+  float: left;
+  padding: 3px 10px 0 0;
+}
+
+input.text {width: 190px;}
+*+html input.text {margin-left: 3px;}
+
+#login .submit {
+	margin: 20px 0;
+	padding-left: 296px;
+}
+*+html #login .submit {padding-left: 276px;}
+* html #login .submit {padding-left: 276px;}
+#login form ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+#login form li {
+	display: inline;
+	margin: 0 10px;
+}
+.help_link {
+	color: blue;
+	Font-Family: Helvetica; 
+	Font-Size: 11px; 
+	Font-Style: Italic; 
+	Color: #FF8026;
+}
+#referral {
+  background-image:url('/Baseline/Saf/Images/logonbottom.png');
+	background-size: cover;
+	background-color: #0C0CEB;
+  clear: both;
+  color: #FFFFFF;
+  display: block;
+  padding: 15px 30px;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#referral .referral_box {
+	width:800px;
+}
+#referral .title {
+	float:left;
+	font: normal 15px/1 Arial Black, "Times New Roman", Times, Serif;
+  	text-align: left;
+	padding-top: 7px;
+}
+#arrow {
+	float:left;
+	background-image:url('/Baseline/Saf/Images/ArrowButton.png'); 
+	width:109px; 
+	height:29px; 
+	margin-left:12px;
+}
+#arrow div {
+	font-size:12px !important;
+	font-weight:300 !important;
+	padding-top: 5px;
+	padding-left: 6px;
+	cursor: pointer;
+}
+#referral strong {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+/*#referral a {margin-left: 10px;}*/
+
+#container.help {
+	width: 530px;
+	padding: 25px;
+}
+.help #title img {
+  float: left;
+  margin-bottom: 20px;
+}
+.help #title div {text-align: right;}
+.help h1 {
+  font: 26px Georgia, "Times New Roman", Times, Serif;
+  height: auto;
+  margin: 1ex 0;
+  text-indent: 0;
+  color: #739600;
+  clear: both;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EBEBEB;
+}
+.back {
+	padding-top: 10px;
+	border-top: 1px solid #EBEBEB;
+	text-align: center;
+}
+#referral.appdown {
+	font-size: 14px;
+	line-height: 1.4;
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#referral.appdown strong {
+	display: block;
+	font-size: 16px;
+}
+#referral.appdown div.first {margin-bottom: 10px;}
+#referral.appdown a {
+	padding: 3px 20px;
+	color: #FF8026;
+	border: 1px solid;
+	border-color: #E1E1E1 #CFCFCF #C3C3C3;
+	background: white;
+	background: -moz-linear-gradient(top,  #fefefe 0%, #f3f3f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#f3f3f3));
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#f3f3f3 100%);
+	background: -o-linear-gradient(top,  #fefefe 0%,#f3f3f3 100%);
+	background: -ms-linear-gradient(top,  #fefefe 0%,#f3f3f3 100%);
+	background: linear-gradient(to bottom,  #fefefe 0%,#f3f3f3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f3f3f3',GradientType=0 );
+	font-weight: normal;
+	font-style: normal;
+	-webkit-box-shadow: 0 5px 2px -5px black;
+	-moz-box-shadow: 0 5px 2px -5px black;
+	box-shadow: 0 5px 2px -5px black;
+	line-height: 1;
+	zoom: 1;
+	vertical-align: middle;
+	font-size: 12px;
+}
+#referral.appdown a:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+	top: 1px;
+}
+
+dt, #referral strong, #app_down {font-weight: normal !important\9;}
+dt {font-family: 'Open Sans Bold', Sans-serif !important\9;}
+#referral strong, #app_down {font-family: 'Open Sans Semibold', Sans-serif !important\9;}
+
+#login form #soh-links{
+	display: block;
+  margin: 15px auto;
+  position: relative;
+	width: 407px;
+}
+#login form #soh-links ul{
+  float: left;
+  margin-top: 15px;
+  width: 345px;
+}
+ 
+#login form div#entrust-logo{
+	display: block;
+  float: left;
+  position: relative;
+	margin: 0 0 15px 10px;
+	font-size:1px;
+	overflow:hidden;
+	height:52px;
+	width:52px;
+}
+#login form div#entrust-logo img{
+	height:52px;
+	width:52px;
+}
+
+#learn-more-wrp{
+	display: block;
+  margin: 0 auto;
+  width: 109px;
+}
+
+#login form div#entrust-logo div a[href="http://www.entrust.net"]{
+	display:none;
+}
+
+#login form div#entrust-logo > div div:first-child a{
+	height:52px;
+	width:52px;
+	display:block;
+}
+
+#maint-message {
+	color: #FF8026;
+  font-size: 14px;
+  font-weight: bold;
+	background:#f5f5f5;
+	padding: 5px 30px 18px 0;
+}
+#maint-message p{
+	background-image: url("/Baseline/Saf/Images/Default/Signon/maintenance_small.png");
+  background-repeat: no-repeat;
+  margin: 0 0 0 20px;
+  padding: 0 0 0 76px;
+}
+
+/* Explicit style declarations  */
+
+</style>
+
+  		
+
+  
+  
+  
+ <title>HR Passport</title>
+
+<script type="text/javascript">
+/*
+## Copyright:  ©2003 MBH Solutions, Inc., All rights reserved.
+
+Filename: Cookie.js
+
+*/
+
+function _ffCookieValue(Offset) {
+	"use strict";
+	var End = document.cookie.indexOf(";", Offset);
+	if(End === -1) {End = document.cookie.length;}
+	/* Return the portion of cookie beginning with the offset and ending with the ";". */
+	return unescape(document.cookie.substring( Offset, End ));
+}
+
+//Return the value of the cookie by name
+
+function ffCookieRead(Name) {
+	"use strict";
+	var Len = Name.length;
+	//look at each substring that's the same length as the cookie name
+	//for a match. if found, look up the value and return it.
+	var i=0;
+	while ( i < document.cookie.length ) {
+		var j = i + Len +1;
+		if (document.cookie.substring( i,j ) === ( Name + "=" ) ) {
+			return _ffCookieValue(j);
+		}
+		i = document.cookie.indexOf(" " , i) + 1;
+		if ( i === 0 ) {
+			break;
+		}
+	}
+	return null;
+}
+/* create or change a cookie given its name and value...the name and value are required, but the expiration date isn't...note that if you don't specify an expiration date the cookie only exists for the current session. */
+function ffCookieSet(Name,Value,Expire) {
+	"use strict";
+	document.cookie = Name + "=" + escape( Value ) + ";expires=" + Expire;
+}
+/*
+Filename:   Signon_lib.js - Signon form setup and interactive functions
+Summary:	Provides handler functions for signon form.  This file
+	expects to be incorporated into a script body (no local SCRIPT tags or non-JavaScript elements) that sets up the environment variables required from the server.
+
+Author:	Bradley Rhine
+Date:	7/1/1999
+Revisions
+	Date:
+	Author:
+	Change:
+
+*/
+
+function ffSignonOnSubmit()
+{
+	
+	var theForm = window.document.forms[0];
+  	var index = 0;
+	var current_option = '';
+	var theDate = new Date();
+
+	  					// Store the userid and type in a cookie before attempting signon
+	if(jjSignonMemory)
+	{
+	  
+	  if(theForm.Pers_Key_Type.length > 1) // Extract currently selected key type value
+	  	{
+		if(theForm.Pers_Key_Type.type == 'select-one')
+	  		current_option = theForm.Pers_Key_Type.options[theForm.Pers_Key_Type.selectedIndex].value;
+		else
+			{
+			for(xx=0; xx<theForm.Pers_Key_Type.length; xx++)
+				{
+				if(theForm.Pers_Key_Type[xx].checked == true)
+					{
+					current_option = theForm.Pers_Key_Type[xx].value;
+					break;
+					}
+				}
+			}
+	 	}
+
+	  var cookie_string = theForm.Pers_Key.value + ':' + current_option;
+
+						// Calculate an expiration 7 days in the future
+	  theDate.setTime(theDate.getTime() + (7 * 86400 * 1000));
+
+	  ffCookieSet('FF_SIGNON_HIST', cookie_string, theDate.toGMTString());
+	}
+
+	return true;
+}
+
+
+		//  Used to prevent inadvertent reuse of pin on any reload (including by a back button)
+
+function ffSignonInit()
+{
+	var theForm = window.document.forms[0];	
+	var delimit_index = -1;
+	var type_value = '';
+						//retrieve the userid and type cookie if defined and set the values
+	if(jjSignonMemory)
+	{
+						// Extract current value
+	  var cookie_string = ffCookieRead('FF_SIGNON_HIST');
+
+	  if(cookie_string && cookie_string != '')
+	  {
+						// Locate the delimiter between Key and Type
+	    delimit_index = cookie_string.indexOf(':');
+
+						// If no delimiter, assume Key only
+	    if(delimit_index < 0)
+	    {
+	      theForm.Pers_Key.value = cookie_string;
+	    }
+	    else
+	    {
+		theForm.Pers_Key.value = cookie_string.substring(0, delimit_index);
+
+	  	if(theForm.Pers_Key_Type.length > 1) // Pick the appropriate value in drop down
+	  	  {
+		    type_value = cookie_string.substring(delimit_index + 1, cookie_string.length);
+
+		    for(var xx = 0 ; xx < theForm.Pers_Key_Type.length ; xx++)
+		    {
+		    	if(theForm.Pers_Key_Type.type == 'select-one')
+		    		{
+				if(theForm.Pers_Key_Type.options[xx].value == type_value)
+					{
+					theForm.Pers_Key_Type.options[xx].selected = true;
+					break;
+					}
+		    		}
+		    	else
+		    		{
+				if(theForm.Pers_Key_Type[xx].value == type_value)
+					{
+					theForm.Pers_Key_Type[xx].checked = true;
+					break;
+					}
+		    		}
+		    		
+		    }
+	  	  }
+	    }
+	  }
+    }
+
+  theForm.Pers_Key.focus();
+  }
+
+</script>
+<script type="text/javascript" src="HRPassport_files/About.js"></script>
+<script type="text/javascript">
+"use strict";
+var items;
+function checkNull(e) {
+		items = e;
+		if (items === null || items === "") {return true;}
+		return false;
+}
+function checkDigit(e) {
+		items = e.value;
+		var pattern = /^\d\d?\d?\.?\d?\d?$/;
+		var result = items.match(pattern);
+		if (result === null) {return false;}
+		return true;
+}
+function checkSSN(e) {
+		items = e.value;
+		items = items.replace(/\s/g, "");
+		if (checkNull(items)) {return 2;}
+		var ssnFormat1 = false;
+		var ssnFormat2 = false;
+		var ssnFormat3 = false;
+		var ssnFormat4 = false;
+		var pattern1 = /^\d{3}-\d{2}-\d{4}$/;
+		var pattern2 = /^\d{3}\s\d{2}\s\d{4}$/;
+		var pattern3 = /^\d{9}$/;
+		var pattern4 = /^\d{3}\/\d{2}\/\d{4}$/;
+		var result1 = items.match(pattern1);
+		var result2 = items.match(pattern2);
+		var result3 = items.match(pattern3);
+		var result4 = items.match(pattern4);
+		if (result1 === null && result2 === null && result3 === null && result4 === null) {return 3;}
+		if (result3 === null) {
+		if (result2 !== null) {
+		items = items.replace(/^(\d{3})\s(\d{2})\s(\d{4})$/, "$1$2$3");
+		} else if (result1 !== null) {
+		items = items.replace(/^(\d{3})-(\d{2})-(\d{4})$/, "$1$2$3");
+		} else if (result4 !== null) {
+		items = items.replace(/^(\d{3})\/(\d{2})\/(\d{4})$/, "$1$2$3");
+		}
+		}
+		e.value = items;
+		return 1;
+}
+function validateSSNBirthday() {
+		if (checkSSN(window.document.forms[0].ssn) === 3) {
+		alert("Please enter a valid 9 digits National ID (SSN/SIN).");
+		return false;
+		}
+		if (window.document.forms[0].ssn.value === "") {
+		alert("Please enter your National ID (SSN/SIN).");
+		return false;
+		}
+		if (window.document.forms[0].mon.options[window.document.forms[0].mon.selectedIndex].value === 0) {
+		alert("Please select the month of your birthday.");
+		return false;
+		}
+		if (window.document.forms[0].day.options[window.document.forms[0].day.selectedIndex].value === 0) {
+		alert("Please select the date of your birthday.");
+		return false;
+		}
+		if (window.document.forms[0].yr.value === "") {
+		alert("Please enter the year of your birthday.");
+		return false;
+		}
+		if (window.document.forms[0].yr.value < 1900 || window.document.forms[0].yr.value > 2e3 || checkDigit(window.document.forms[0].yr) === false) {
+		alert("Please enter a valid year of your birthday.");
+		return false;
+		}
+		return true;
+}
+function validateEmplid() {
+		if (checkSSN(window.document.forms[0].ssn) === 3) {
+		alert("Please enter a valid 9 digits National ID (SSN/SIN).");
+		return false;
+		}
+		if (validateSSNBirthday() === false) {
+		return false;
+		}
+		if (window.document.forms[0].emplid.value === "") {
+		alert("Please enter your emplid.");
+		return false;
+		}
+		return true;
+}
+function changeDays(x, y, z) {
+	items = x.selectedIndex;
+	var curDay = y.selectedIndex;
+	var IsIndexExist = false;
+	var i, j;
+	if (items === 2) {
+		j = 29;
+		var CurYear = z.value;
+		var pattern = /^\d{4}$/;
+		var result = CurYear.match(pattern);
+		if (result !== null) {
+		if (CurYear % 4 !== 0) {
+		j = 28;
+		}
+		}
+	}
+	y.length = 0;
+	y.options[0] = new Option("Day", 0);
+	y.options[0].selected = true;
+	if (items === 1 || items === 3 || items === 5 || items === 7 || items === 8 || items === 10 || items === 12) {
+		for (i = 1; i <= 31; i++) {
+		y.options[i] = new Option(i, i);
+		}
+	}
+	if (items === 2) {
+		for (i = 1; i <= j; i++) {
+		y.options[i] = new Option(i, i);
+		}
+	}
+	if (items === 4 || items === 6 || items === 9 || items === 11) {
+		for (i = 1; i <= 30; i++) {
+		y.options[i] = new Option(i, i);
+		}
+	}
+	for (i = 0; i < y.options.length; i++) {
+		if (i === curDay) {
+		IsIndexExist = true;
+		break;
+		}
+	}
+	if (IsIndexExist) {y.selectedIndex = curDay;}
+	else {y.selectedIndex = 0;}
+}
+function makeUpper(e) {
+		return e.toUpperCase();
+}
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23945763-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+	function addEvent( obj, type, fn ) {
+		if ( obj.attachEvent ) {
+		obj['e'+type+fn] = fn;
+		obj[type+fn] = function(){obj['e'+type+fn]( window.event );}
+		obj.attachEvent( 'on'+type, obj[type+fn] );
+		} else
+		obj.addEventListener( type, fn, false );
+	}
+
+/* Explicit script declarations  */
+
+/* Explicit onLoad behavior declarations  */
+
+/* Declare the primary onLoad() event handler. */
+function ffOnLoad() {
+
+/* Invoke the list of event handlers  */
+ffSignonInit()
+
+}
+addEvent(window,'load',ffOnLoad);
+
+</script>
+</head>
+
+<body style="background: none repeat scroll 0% 0% rgb(0, 49, 105);" onload="ffOnLoad(this)">
+<div id="hrp_login_backgroud_frame" style="z-index: -1; position: absolute; left: 0px; top: 0px; margin: 0px auto;">
+
+		<img id="hrp_login_backgroud" src="HRPassport_files/Login.jpg" style="display:" border="0" width="1515">
+</div>
+
+<script type="text/javascript" src="HRPassport_files/jquery-1.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	var whRatio = 1600/1173;
+
+	var adjustBG=function() {
+  var width = $(window).width();
+  var height = $(window).height();
+  if ((1000* width/height) <= (whRatio *1000)){
+		$('#hrp_login_backgroud').attr('height', height);
+		$('#hrp_login_backgroud').removeAttr('width');
+  }else{
+		$('#hrp_login_backgroud').attr('width', width);
+		$('#hrp_login_backgroud').removeAttr('height');
+  }
+
+	};
+
+	  $('body').css({'background': ''});
+	  $('body').css({'background': '#003169'});
+  		$('#hrp_login_backgroud_frame').show();
+
+		adjustBG();
+		$(window).resize(function() {
+		 adjustBG();
+		});
+});
+
+</script>
+
+<div></div>
+<div id="mobile_check">
+	<center>
+<script type="text/javascript">
+if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPad/i))) {
+document.write('<a href="https://itunes.apple.com/us/app/trinet-mobile/id589217167?mt=8&uo=4" target="itunes_store"><img src="http://r.mzstatic.com/images/web/linkmaker/badge_appstore-lrg.gif" alt="TriNet Mobile - TriNet" style="border: 0;"/></a>');
+}
+if(navigator.userAgent.match(/Android/i)){
+document.write('<a href="https://play.google.com/store/apps/details?id=com.trinet.hrpmobile"><img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a>');
+}
+</script>
+	</center>
+</div>
+<div>
+  
+
+	<div id="login">
+		
+		<script type="text/javascript">
+		function popup(mylink, windowname) {
+		if (! window.focus) return true;
+		var href;
+		if (typeof(mylink) == 'string')
+		 	href=mylink;
+		else
+		 	href=mylink.href;
+		window.open(href, windowname, 'width=880,height=800,scrollbars=yes');
+		return false;
+		}
+		</script>
+		<form id="SWLogonForm" method="POST" action="/Link2HR.eng?/Saf/Entry/Signon-update.htm" autocomplete="off" onsubmit="ffSignonOnSubmit()">
+		
+		<div style="position: relative">
+		<div id="logtext">
+		<table><tbody><tr><td style="background-image:url('/Baseline/Saf/Images/LogInBox.png'); height: 540px; width: 450px; vertical-align:bottom;">
+		<table width="100%">
+		
+		<tbody><tr><td width="30">&nbsp;</td><td>
+		<b>Personal Identifier Type </b><br>
+		<div style="clear:both; height:6px"></div>
+		<label><input name="Pers_Key_Type" value="2" checked="checked" type="radio">Employee ID</label>
+		<label><input name="Pers_Key_Type" value="3" type="radio"> Soc. Sec. # (US Only)</label>
+		<label><input name="Pers_Key_Type" value="5" type="radio"> Custom ID</label><br>
+		<div style="clear:both; height:15px"></div>
+
+		<label for="identifier"><b>Personal Identifier</b></label><br>
+		<input id="identifier" name="Pers_Key" onblur="checkSSN(this);" type="text"><br>
+		<div style="clear:both; height:10px"></div>
+
+		<label for="password"><b>Password</b></label><br>
+		<input id="password" name="Pin" maxlength="14" type="password"><br>
+		<input name="FAILCOUNT" value="" type="HIDDEN"><br>
+		<input name="Submit" value="Login" type="submit"> <br>
+
+		<a href="https://www.hrpassport.com/Link2HR.eng/?Saf/Entry/SignOnHelp/SignOnLookUp.htm" class="help_link">Password not working?&nbsp;|&nbsp; </a>
+		<a href="https://www.hrpassport.com/Link2HR.eng/?Saf/Entry/SignOnHelp/SignOnHelp.htm" class="help_link">Help&nbsp;|&nbsp;</a>
+		<a href="https://www.hrpassport.com/Link2HR.eng/?Saf/Entry/SignOnHelp/SupportedBrowsers.html" onclick="return popup(this, 'SupportedBrowsers')" class="help_link">Supported Browsers</a>
+		<a href="https://www.entrust.net/customer/profile.cfm?domain=www.hrpassport.com&amp;lang=en" target="_blank">
+  		  <img src="HRPassport_files/entrust.gif" alt="TriNet - Strategic HR Outsourcing Business Partner" height="45" width="45"></a><br><br>
+  		  <div style="clear:both; height:6px"></div>
+
+		 </td></tr></tbody></table>
+		 </td></tr></tbody></table>
+		 
+		
+		
+		</div>
+  </div>
+		<div class="hidden">
+		<input name="platform" value="Win32" type="hidden">
+		<input name="browser" value="Netscape" type="hidden">
+		<input name="FAILCOUNT" value="" type="hidden">
+		
+		
+		
+		</div>
+		<script type="text/javascript">
+		var curPlatform = navigator.platform;
+		var curBrowser = navigator.appName;
+		document.forms['SWLogonForm'].elements['platform'].value = curPlatform;
+		document.forms['SWLogonForm'].elements['browser'].value = curBrowser;
+		</script>
+		</form>
+		
+	</div>
+
+	 <div id="referral">
+		<div class="referral_box">
+		<div class="title">Cut through the maze of the Affordable Care Act</div>
+		<div id="arrow" onclick="window.open('http://www.trinet.com/affordablecareact/')"><div>LEARN MORE</div></div>
+		</div>
+	</div>
+
+</div>
+
+  
+
+</body></html>

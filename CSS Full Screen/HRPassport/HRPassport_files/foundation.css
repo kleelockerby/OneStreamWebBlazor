@@ -1,0 +1,526 @@
+/*
+## Copyright:	2001 MBH Solutions, Inc., All rights reserved.
+## Filename:	Foundation.css
+
+Title:	Link2HR Foundation style sheet
+Summary:	Provides the common style attributes for the application suite.
+		Where appropriate, some models and application will provide a supplementary style sheet to override selected attributes.
+
+Author:	Bradley Rhine
+Date:	2/10/2002
+Revisions
+
+	Date:	08/23/2005
+	Author: J. Alvies
+	Change: Changed font-family order, so that Arial is first.
+	
+	Janaki 04/07/2006 changed P.title to align left and marginleft to 12
+
+*/
+
+@font-face {
+		font-family: 'Open Sans Italic';
+		src: url('OpenSans-Italic-webfont.eot');
+		src: url('OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype');
+}
+@font-face {
+		font-family: 'Open Sans Bold';
+		src: url('OpenSans-Bold-webfont.eot');
+		src: url('OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype');
+}
+@font-face {
+		font-family: 'Open Sans Semibold';
+		src: url('OpenSans-Semibold-webfont.eot');
+		src: url('OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype');
+}
+@font-face {
+		font-family: 'Open Sans Bold Italic';
+		src: url('OpenSans-BoldItalic-webfont.eot');
+		src: url('OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype');
+}
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px/1.6 'Open Sans', sans-serif;
+	background-color: #FFF;
+	color: #636363;
+}
+a {
+	color: #FF8026;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	cursor: pointer;
+}
+a:hover {color: #D55C19;}
+button, img, input, select, textarea {vertical-align: middle;}
+div {text-align: left;}
+font {font-family: 'Open Sans', sans-serif;}
+form, fieldset, legend {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+h1, h2 {
+	font-weight: 600;
+	font-size: 16px;
+	color: #0073CF;
+	margin: 0 0 1.5ex;
+	font-style: normal;
+}
+h1 a, h2 a {
+	color: #0073CF;
+	font-style: normal;
+	font-weight: 600;
+}
+table + h2 {margin-top: 2ex;}
+h3 {font-size: 100%;}
+h4 {
+  color: #939393;
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 1ex 0;
+  text-transform: uppercase;
+}
+hr {border-top: solid; color: #333;}
+hr.header { border-bottom: solid; color: #666666;	width: 100%; margin: 0; }
+hr.time {border: 0; color: #bd888d; background-color: #bd888d; height: 1px; width: 60%;}
+img {border: none;}
+input {
+	margin: 0 5px 0 0;
+	font-family: 'Open Sans', Sans-serif !important;
+}
+input[type="text"], input[type="password"], textarea {
+	border: 1px solid;
+	border-color: #C2C2C2 #D1D1D1 #E0E0E0;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) inset;
+	color: #636363;
+	padding: 3px 5px;
+}
+input.text {
+	border: 1px solid;
+	border-color: #C2C2C2 #D1D1D1 #E0E0E0;
+	color: #636363;
+	padding: 3px 5px;
+}
+input[type=text][disabled],input[type=password][disabled] {
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) inset;
+	color: #C0C0C0;
+}
+input[type="button"], input[type="submit"] {
+	background: #EA6E20; /* Old browsers */
+	background: -moz-linear-gradient(top,	#fe7f26 0%, #d75d1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fe7f26), color-stop(100%,#d75d1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,	#fe7f26 0%,#d75d1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,	#fe7f26 0%,#d75d1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,	#fe7f26 0%,#d75d1a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,	#fe7f26 0%,#d75d1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7f26', endColorstr='#d75d1a',GradientType=0 ); /* IE6-9 */
+	border: 1px solid;
+	border-color: #FEAC71 #D58043 #B45C1E;
+	-webkit-box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.8);
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	height: 30px;
+	padding: 0 20px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+}
+.FormButtons input, .submit input {
+	background-color: #EA6E20; /* Old browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe7f26', endColorstr='#d75d1a',GradientType=0 ); /* IE6-9 */
+	border: 1px solid;
+	border-color: #FEAC71 #D58043 #B45C1E;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	height: 30px;
+	padding: 0 20px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+	background: #EA6E20; /* Old browsers */
+	background: -moz-linear-gradient(top,	#F27A24 0%, #C95618 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F27A24), color-stop(100%,#C95618)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,	#F27A24 0%,#C95618 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,	#F27A24 0%,#C95618 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,	#F27A24 0%,#C95618 100%); /* IE10+ */
+	background: linear-gradient(to bottom,	#F27A24 0%,#C95618 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F27A24', endColorstr='#C95618',GradientType=0 ); /* IE6-9 */
+}
+input[type="button"]:active, input[type="submit"]:active {
+	position: relative;
+	top: 2px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #252525;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.FormButtons input:active, .submit input:active {
+	position: relative;
+	top: 2px;
+	color: #252525;
+}
+legend {display: none;}
+p {margin: 2ex 0;}
+ul {
+	margin-left: 0;
+	padding-left: 16px;
+}
+.ContextBanner { background-color : #888888; color : white; font-weight: bold; text-align: center; }
+.alertMed { font-weight: bold; font-size: 14px; color: #bb0000; }
+.bullets {
+	padding-left: 13px;
+	padding-bottom: 3px;
+	text-indent: -13px;
+	padding-top: 3px;
+}
+
+table {
+	border-collapse: collapse;
+	border: none;
+	font-size: 100%;
+	margin: 0;
+}
+textarea {overflow: auto;}
+th, td {
+	vertical-align: top;
+	padding: 0;
+	text-align: left;
+}
+th, tfoot td {
+	font-weight: bold;
+  color: #949494;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+th a {
+	color: #949494;
+	font-style: normal;
+}
+th center {text-align: left;}
+td.NetCost { text-align: right; font-weight: bold; }
+.hidden {display: none;}
+p.MessageNote,
+p.MessageRemarks,
+p.MessageFatal,
+p.ManualAdvance,
+.message
+{
+	padding: 10px 20px;
+	margin: 20px 0;
+	clear: both;
+}
+tr.message {line-height: 1.6;}
+p.MessageNote,
+p.MessageRemarks,
+.message.note,
+.message.remarks,
+.message.approval
+	{background-color: #FFF1E9;}
+p.MessageNote u, .message.note u, .message.note strong {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+p.MessageFatal, .message.fatal {
+	color: #BB133E;
+	font-weight: bold;
+	background-color: #FFDBE4;
+}
+p.Copyright {	font-size: 8pt;}
+p.MessageEmphasis, .message.emphasis {
+	background: #F9F9F9;
+	line-height: 1;
+	padding: 1ex 20px;
+}
+p.MessageWarning, .message.warning {
+	font-weight: bold;
+	background: #fee;
+}
+.returnMsg, .message.return {
+	color: #262;
+	font-weight: bold;
+	font-style: italic;
+	text-align: right;
+}
+.message.intro {
+	padding: 0;
+	margin-top: 10px;
+}
+p.ManualAdvance {
+	background-color: #F9F9F9;
+	font-weight: bold;
+}
+.formbuttons {margin: 8px 20px;}
+.submit {margin: 27px 0 20px;}
+.bodyContentDiv + .submit {margin-top: 3px;}
+.FormButtons img, .submit img {
+	width: auto;
+	height: auto;
+}
+p.FormButtons {margin-bottom: 0;}
+.FormButtons a, .FormButtons img, .submit img {margin-right: 20px;}
+
+iframe#BODY {width: 100%;}
+.bodyContentDiv {
+	padding-bottom: 1px;
+	overflow: auto;
+}
+.SplashFrame {
+	border: none !important;
+	width: auto;
+}
+.SplashFrame td {
+	background-color: transparent;
+	padding-right: 20px;
+}
+.HeaderFrame { border: none; border-collapse: collapse; padding: 0; margin: 0; }
+.HeaderImages {display: none;}
+.BottomImages { vertical-align:	bottom; padding: 0; margin: 0; border: none; }
+.HeaderLayout { border: none; border-collapse: collapse; padding: 0; margin: 1px 0px; }
+.page_title {
+	position: relative;
+	margin: auto;
+}
+.page_title h1, .page_title h1 a, .MainHeading {
+	font: normal 26px/100% Georgia, "Times New Roman", Times, Serif !important;
+	color: #739500;
+}
+.page_title h1, .MainHeading td.HeaderTitle {
+	margin: 0 0 10px;
+	padding-bottom: 23px;
+	background: url(../saf/images/default/headings/separator_hor.png) bottom center no-repeat;
+}
+.MainHeading {
+	width: 900px;
+	margin-bottom: 10px;
+}
+.MainHeading p {margin: 0;}
+#TutorialTitle {font-size: 12px;}
+.tutorial {margin: 14px 0 24px;}
+
+p.Title { text-align: left; font-size: 18px; font-weight: bold; margin-right: 0em; margin-left: 0em; margin-top: 0.25em; margin-bottom: 0.25em;	}
+
+table.Container td { text-align: center; vertical-align: top; }
+
+.Right { text-align: right	}
+.Left { text-align: left	}
+.Center { text-align: center	}
+
+table.SubHeading {
+	background-color : #eeeeee;
+	width: 100%;
+	table-layout: fixed;
+	font-size: 9pt;
+	font-weight: bold;
+}
+table.HideTable { display: none; }
+
+
+.topInstructions { text-align: center; font-size: 16px; font-weight: bold; margin: 0.5em;	}
+.description {margin-bottom: 15px;}
+.tabs {margin: 20px 0 27px;}
+.tabs a {margin-right: 10px;}
+.payrollEstimate {margin: 30px 0;}
+.payrollEstimate dd {margin: 0 0 2ex;}
+div.bodyContentDiv p {margin: 2ex 0 !important;}
+.mainContent {
+	margin: 0 !important;
+	min-width: 0 !important;
+	text-align: left !important;
+	width: auto !important;
+}
+table.sortable a.sortheader {font-family: 'Open Sans', Sans-serif !important;}
+#SPTestDiv {
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	color: black;
+	margin-left: -50%;
+	overflow: auto;
+}
+#SPTestDiv img {
+	border: none !important;
+	float: left;
+}
+#SPTestDiv p {
+	font-size: 11px;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+.SPTestTab {font-size: 11px;}
+#content_main, #more_info {
+	height: 1%;
+	overflow: hidden;
+	clear: both;
+}
+#content_main .section, #content_main .section ul, #more_info .section {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 45%;
+}
+#content_main .section ul {
+	float: none;
+	width: auto;
+}
+#content_main .s1, #more_info .s1 {margin-right: 5%;}
+#more_info li {margin-bottom: 2ex;}
+input#EFFDT,
+#RECURRING_BEGINDATE,
+#RECURRING_ENDDATE,
+#CHECK_DT,
+#BIRTH,
+#lr_start,
+#lr_end,
+#f_from,
+#f_to,
+#ENDDT
+{
+	margin-right: 0px;
+	padding-right: 20px;
+}
+#anchorEFFDT,
+#anchorRECURRING_BEGINDATE,
+#anchorRECURRING_ENDDATE,
+#anchorCHECK_DT,
+#anchorBIRTH,
+#anchorfrm,
+#anchorto,
+#anchorfirst,
+#anchorsecond,
+#anchorENDDT
+{
+	left: -30px;
+	position: relative;
+}
+.submitButton {
+	padding: 0 !important;
+	text-align: left !important;
+	width: auto !important;
+}
+.link_alert {
+	font-weight: bold !important;
+	color: #FF8026 !important;
+	font-style: italic;
+	font-size: inherit !important;
+	letter-spacing: 0 !important;
+	padding: 0 !important;
+}
+.introContent {
+	background-color: transparent !important;
+	margin: 2ex 0 !important;
+	padding: 10px 0 !important;
+	text-align: left !important;
+	width: auto !important;
+}
+.introContent p {
+	font-size: inherit !important;
+	padding: 0 !important;
+	text-align: left !important;
+}
+.criteria {
+	display: table !important;
+	padding: 0 !important;
+}
+.criteria th {
+	font-size: 11px !important;
+	text-align: left !important;
+	padding-right: 5px;
+}
+#currency {margin: 2px 0 !important;}
+#highlight {color: #0073CF !important;}
+.listtable thead td {background-color: #FF8026 !important;}
+#tacHeader, #trinetCorp, #tacContainer h3, #tacContainer p {font-family: 'Open Sans', Sans-serif !important;}
+.stepsDivIn, .visDivIn {
+	background-color: white;
+	border: 1px solid #DDD;
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -90px;
+	padding: 10px 20px;
+	top: 50%;
+	position: absolute;
+}
+.content1 {padding-left: 0 !important;}
+.content1 h2 {
+	color: #0073CF !important;
+	font-weight: 600 !important;
+}
+
+/* Sortable tables */
+table.sortable a.sortheader {
+	text-decoration: none;
+	display: block !important;
+}
+table.sortable span.sortarrow {margin-left: 5px;}
+.sortable .sortheader:hover {color: black;}
+/* end sortable tables styles */
+#reports {
+	padding-left: 0;
+	list-style: none;
+}
+/* IE specific font style declarations */
+.oldie a,
+.oldie .TutorialTitle,
+.oldie .returnMsg,
+.oldie .message.return
+.oldie .link_alert {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Open Sans Bold Italic', Sans-serif;
+}
+.oldie #page_footer a {font-family: 'Open Sans', Sans-serif;}
+.oldie b,
+.oldie h3,
+.oldie h4,
+.oldie strong,
+.oldie th,
+.oldie p.MessageWarning,
+.oldie p.MessageFatal,
+.oldie .message.fatal,
+.oldie p.ManualAdvance,
+.oldie p.MessageNote u,
+.oldie .ContextBanner,
+.oldie .alertMed,
+.oldie td.NetCost,
+.oldie p.Title,
+.oldie table.SubHeading,
+.oldie .topInstructions,
+.oldie .link_alert,
+.oldie #tacHeader,
+.oldie #trinetCorp,
+.oldie #tacContainer h3,
+.oldie p#tacInstructions,
+.oldie #userGuideLink,
+.oldie #PersonInputForm p table th a,
+.oldie .listtable th a,
+.oldie .MainHead th a,
+.oldie .formtable th a,
+{
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Open Sans Bold', Sans-serif;
+}
+.oldie em, .oldie i, .oldie cite, .oldie address {
+	font-style: normal;
+	font-family: 'Open Sans Italic', Sans-serif;
+}
+.oldie h1, .oldie h2 {
+	font-weight: normal;
+	font-family: 'Open Sans Semibold', Sans-serif;
+}
+/* end IE specific declaratioins */

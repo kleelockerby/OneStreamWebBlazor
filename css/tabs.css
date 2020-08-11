@@ -3,25 +3,22 @@
   border-bottom: 1px solid #ccc;
 }
 
-.nav-tabs .nav-link.active {
-  color: #fff;
-  background-color: #23425c;
-  border-color: #2b6386 #2b6386 #fff;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.25rem 0.5rem;
+.nav-tabs .nav-item {
+  margin-left: 0.3125rem;
 }
 
 .nav-tabs .nav-link {
+  display: block;
+  padding: 0.25rem 0.5rem;
   border-color: #ccc #ccc #fff;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 
-.nav-tabs .nav-item {
-  margin-left: 0.3125rem;
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #23425c;
+  border-color: #2b6386 #2b6386 #fff;
 }
 
 a.dashboard {

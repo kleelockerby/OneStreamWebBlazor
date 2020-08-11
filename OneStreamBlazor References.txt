@@ -1,0 +1,25 @@
+MiniApps
+login.html
+Template-default.html
+Prev/PageMain_old.html
+Prev/template.html
+Prev/PageMain_old
+Prev/oldPages/login.html
+Prev/oldPages/home2.html
+graphics/abbadox.psd
+graphics/trinetLogin copy-Recovered.psd
+graphics/trinetLogin.psd
+graphics/UIElements.psd
+
+Source/Graphics/CRMs
+3dd460aa8decc7f1fae495948e29193d.png
+43b_rw_1920_4x.png
+
+Source/Graphics/DashboardsKL
+2020-05-07_1210_001.png
+help-desk-tracking-software.png
+img_613196.png
+index_1c2 RMA Request-WIP.psd
+
+Source/Graphics/KLImages
+TriNet_Mobile/*.*
